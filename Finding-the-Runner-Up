@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    same_max = []
+    for i in range(n):
+        if (arr[i] == max(arr)):
+            same_max.append(arr[i])
+    for j in same_max:
+        arr.remove(j)
+    print(max(arr))
